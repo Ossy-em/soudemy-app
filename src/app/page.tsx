@@ -1,7 +1,8 @@
 "use client";
 import { useState } from 'react';
+import Main from './components/main';
 
-export default function Home() {
+export default function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -13,8 +14,8 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col w-full px-4 md:px-8 lg:px-32 py-5 h-[5000px]">
-      <nav className="h-[80px] flex flex-row font-[Montserrat] justify-between items-center relative">
+    <div className="flex flex-col w-full px-4 md:px-8 lg:px-32 py-5 h-[5000px] font-[Montserrat]">
+      <nav className="h-[80px] flex flex-row font-[Montserrat] justify-between items-center relative ">
         
     
         <div className="hidden md:flex w-[536px] h-[65px] pt-2.5 gap-15">
@@ -148,7 +149,7 @@ export default function Home() {
         </div>
       </div>
 
-      <h1>hello</h1>
+    <Main/>
     </div>
   );
 }
