@@ -1,6 +1,10 @@
 "use client";
 import { useState } from 'react';
 import Main from './components/main';
+import Features from './components/features';
+import HowItWorks from './components/how-it-works';
+import Products from './components/products';
+import Client from './components/client-stories';
 
 export default function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -14,8 +18,8 @@ export default function App() {
   };
 
   return (
-    <div className="flex flex-col w-full px-4 md:px-8 lg:px-32 py-5 h-[5000px] font-[Montserrat]">
-      <nav className="h-[80px] flex flex-row font-[Montserrat] justify-between items-center relative ">
+    <div className="flex flex-col w-screen py-5 h-[5000px] font-[Montserrat] ">
+      <nav className="h-[80px] flex flex-row font-[Montserrat] justify-between items-center relative lg:px-32">
         
     
         <div className="hidden md:flex w-[536px] h-[65px] pt-2.5 gap-15">
@@ -149,7 +153,11 @@ export default function App() {
         </div>
       </div>
 
-    <Main/>
+    <Main />
+    <Features/>
+    <HowItWorks/>
+    <Products/>
+    <Client/>
     </div>
   );
 }
