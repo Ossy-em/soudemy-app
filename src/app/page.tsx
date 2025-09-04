@@ -20,17 +20,17 @@ export default function App() {
   };
 
   return (
-    <div className="flex flex-col w-screen py-5 h-screen font-[Montserrat] ">
-      <nav className="h-[80px] flex flex-row font-[Montserrat] justify-between items-center relative lg:px-32">
+    <div className="flex flex-col  w-full min-h-screen py-5 font-[Montserrat] overflow-x-hidden">
+     <nav className="fixed top-0 left-0 right-0 z-50 h-[80px] bg-white flex flex-row font-[Montserrat] justify-between items-center px-4 sm:px-6 md:px-8 lg:px-32">
         
     
         <div className="hidden md:flex w-[536px] h-[65px] pt-2.5 gap-15">
           <h1 className="font-bold text-[18px] w-[89px]">Soudemy</h1>
           <ul className="flex gap-6 w-97 text-[14px] font-regular">
-            <li><a href="/" className="hover:text-[#FF8100] transition-colors">Feature</a></li>
-            <li><a href="/how-it-works" className="hover:text-[#FF8100] transition-colors">How it works</a></li>
-            <li><a href="/products" className="hover:text-[#FF8100] transition-colors">Products</a></li>
-            <li><a href="/client-stories" className="hover:text-[#FF8100] transition-colors">Client Stories</a></li>
+            <li><a href="#features" className="hover:text-[#FF8100] transition-colors">Feature</a></li>
+            <li><a href="#how-it-works" className="hover:text-[#FF8100] transition-colors">How it works</a></li>
+            <li><a href="#products" className="hover:text-[#FF8100] transition-colors">Products</a></li>
+            <li><a href="#client-stories" className="hover:text-[#FF8100] transition-colors">Client Stories</a></li>
           </ul>
         </div>
 
@@ -78,12 +78,12 @@ export default function App() {
       )}
 
     
-      <div className={`fixed top-0 right-0 h-full w-80 bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-50 md:hidden ${
+      <div className={`fixed top-0 right-0 h-full w-64 sm:w-80 bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-50 md:hidden ${
         isSidebarOpen ? 'translate-x-0' : 'translate-x-full'
       }`}>
         <div className="flex flex-col h-full">
       
-          <div className="flex justify-between items-center p-6 border-b">
+          <div className="flex justify-between items-center p-4 sm:p-6 border-b">
             <h2 className="font-bold text-[18px]">Soudemy</h2>
             <button 
               onClick={closeSidebar}
@@ -97,7 +97,7 @@ export default function App() {
           </div>
           
      
-          <div className="flex flex-col flex-1 p-6">
+          <div className="flex flex-col flex-1 p-4 sm:p-6">
             <ul className="flex flex-col gap-6 text-[16px] font-regular mb-8">
               <li>
                 <a 
@@ -110,7 +110,7 @@ export default function App() {
               </li>
               <li>
                 <a 
-                  href="/how-it-works" 
+                  href="#how-it-works" 
                   className="block py-2 hover:text-[#FF8100] transition-colors"
                   onClick={closeSidebar}
                 >
@@ -119,7 +119,7 @@ export default function App() {
               </li>
               <li>
                 <a 
-                  href="/products" 
+                  href="#products" 
                   className="block py-2 hover:text-[#FF8100] transition-colors"
                   onClick={closeSidebar}
                 >
@@ -128,7 +128,7 @@ export default function App() {
               </li>
               <li>
                 <a 
-                  href="/client-stories" 
+                  href="#client-stories" 
                   className="block py-2 hover:text-[#FF8100] transition-colors"
                   onClick={closeSidebar}
                 >
@@ -148,12 +148,13 @@ export default function App() {
                 className="px-6 py-3 rounded-[30px] bg-[#FF8100] text-[16px] font-bold text-white hover:bg-[#e6730e] transition-colors"
                 onClick={closeSidebar}
               >
-                <a href="/get-started" className="block ">Get started</a>
+                <a href="/get-started" className="block">Get started</a>
               </button>
             </div>
           </div>
         </div>
       </div>
+
 
     <Main />
     <Features/>
