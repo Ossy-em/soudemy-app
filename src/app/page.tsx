@@ -31,7 +31,7 @@ export default function App() {
           <Link href="/#features" className="hover:text-[#FF8100] transition-colors">Feature</Link>
            <Link href="/#how-it-works" className="hover:text-[#FF8100] transition-colors">How it works</Link>
             <Link href="/#products" className="hover:text-[#FF8100] transition-colors">Products</Link>
-           <Link href="/client-stories" className="hover:text-[#FF8100] transition-colors">Client Stories</Link>
+           <Link href="/#client-stories" className="hover:text-[#FF8100] transition-colors">Client Stories</Link>
           </ul>
         </div>
 
