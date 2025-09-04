@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from 'react';
 import Main from './components/main';
 import Features from './components/features';
@@ -27,10 +28,10 @@ export default function App() {
         <div className="hidden md:flex w-[536px] h-[65px] pt-2.5 gap-15">
           <h1 className="font-bold text-[18px] w-[89px]">Soudemy</h1>
           <ul className="flex gap-6 w-97 text-[14px] font-regular">
-            <li><a href="#features" className="hover:text-[#FF8100] transition-colors">Feature</a></li>
-            <li><a href="#how-it-works" className="hover:text-[#FF8100] transition-colors">How it works</a></li>
-            <li><a href="#products" className="hover:text-[#FF8100] transition-colors">Products</a></li>
-            <li><a href="#client-stories" className="hover:text-[#FF8100] transition-colors">Client Stories</a></li>
+          <Link href="/#features" className="hover:text-[#FF8100] transition-colors">Feature</Link>
+           <Link href="/#how-it-works" className="hover:text-[#FF8100] transition-colors">How it works</Link>
+            <Link href="/#products" className="hover:text-[#FF8100] transition-colors">Products</Link>
+           <Link href="/client-stories" className="hover:text-[#FF8100] transition-colors">Client Stories</Link>
           </ul>
         </div>
 
