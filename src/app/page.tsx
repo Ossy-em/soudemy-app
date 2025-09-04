@@ -5,6 +5,8 @@ import Features from './components/features';
 import HowItWorks from './components/how-it-works';
 import Products from './components/products';
 import Client from './components/client-stories';
+import Download from './components/download';
+import Footer from './components/footer';
 
 export default function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -18,7 +20,7 @@ export default function App() {
   };
 
   return (
-    <div className="flex flex-col w-screen py-5 h-[5000px] font-[Montserrat] ">
+    <div className="flex flex-col w-screen py-5 h-screen font-[Montserrat] ">
       <nav className="h-[80px] flex flex-row font-[Montserrat] justify-between items-center relative lg:px-32">
         
     
@@ -158,6 +160,8 @@ export default function App() {
     <HowItWorks/>
     <Products/>
     <Client/>
+    <Download/>
+    <Footer/> 
     </div>
   );
 }

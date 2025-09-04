@@ -29,7 +29,7 @@ export default function Main() {
           {checkList.map((item) => (
             <div key={item.id} className="flex items-center gap-2">
               <MdCheckCircle className="w-5 h-5" />
-              <span className="font-regular text-sm sm:text-[14px]">{item.name}</span>
+              <span className="font-regular text-sm sm:text-[14px] ">{item.name}</span>
             </div>
           ))}
         </div>
@@ -37,7 +37,7 @@ export default function Main() {
 
       <div className="w-full md:w-1/2 flex justify-center md:justify-end">
         <Image
-          src="/main/Group 1.png"
+          src="/main/Group 1.svg"
           alt="Main Image"
           width={350}
           height={320}
